@@ -10,4 +10,18 @@ $(document).ready(function() {
     $("#output4").text(colorInput);
     event.preventDefault();
   });
+
+  $("#address").submit(function(event) {
+    var nameAddress = $("#nameAddress").val();
+    var streetAddress = $("#streetAddress").val();
+    var cityAddress = $("#cityAddress").val();
+    var stateAddress = $("#stateAddress").val();
+    var zipAddress = $("#zipAddress").val();
+    $("#nameOutput").text(nameAddress);
+    $("#streetOutput").text(streetAddress);
+    $("#cityOutput").text(cityAddress);
+    $("#stateOutput").text(stateAddress);
+    $("#zipOutput").text(zipAddress);
+    event.preventDefault();
+  });
 });

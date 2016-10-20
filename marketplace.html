@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link href="css/styles.css" rel="stylesheet" type="text/css">
+    <script src="http://code.jquery.com/jquery-3.1.1.js"   integrity="sha256-16cdPddA6VdVInumRGo6IbivbERE8p7CQR3HzTBuELA="   crossorigin="anonymous"></script>
+    <script src="js/scripts.js"></script>
+    <title>Marketplace</title>
+  </head>
+  <body>
+    <div class="container">
+      <a class="link2" href="index.html">Index</a>
+      <form id="address">
+        <h3>Shipping Address:</h3>
+        <p>Your Name:</p>
+        <input id="nameAddress" type="text" name="name">
+        <p>Street Address:</p>
+        <input id="streetAddress" type="text" name="street">
+        <p>City:</p>
+        <input id="cityAddress" type="text" name="city">
+        <p>State:</p>
+        <input id="stateAddress" type="text" name="state">
+        <p>Zip Code:</p>
+        <input id="zipAddress" type="text" name="zip">
+        <button type="submit" class="btn">Submit</button>
+      </form>
+      <div id="no-show">
+        <p>Dear <span id="nameOutput"></span>, thank you for you order!</p>
+        <p>We have the following information as your address:</p>
+        <ul>
+          <li id="nameOutput"></li>
+          <li id="steetOutpt"></li>
+          <li id="cityOutput"></li>
+          <li id="stateOutput"></li>
+          <li id="zipOutput"></li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
